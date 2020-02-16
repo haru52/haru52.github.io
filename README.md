@@ -1,8 +1,6 @@
-# haru52.github.io
+# haru Website
 
 ## URL
-- [https://haru52.com](https://haru52.com)
-- [https://haru52.github.io/](https://haru52.github.io/)
 
-## Overview
-haru's profile website
+- [https://haru52.com/](https://haru52.com/)
+- [https://haru52.github.io/](https://haru52.github.io/)
