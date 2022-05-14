@@ -15,7 +15,7 @@
     "lint:md": "markdownlint . \".?*/**/*.{md,markdown}\"",
     "lint:prettier": "prettier --check .",
     "lint:pug": "markuplint \"src/pages/**/*.pug\"",
-    "lint:style": "stylelint --cache \"src/styles/**/*.scss\"",
+    "lint:style": "stylelint --cache \"src/stylesheets/**/*.scss\"",
     "lint:es": "eslint --ext ts,js --cache .",
     "format": "run-s --continue-on-error format:*",
     "format:md": "npm run lint:md -- --fix",

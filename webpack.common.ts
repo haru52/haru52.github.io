@@ -23,7 +23,7 @@ function initHtmlWebpackPlugins() {
 }
 
 const config: webpack.Configuration = {
-  entry: './src/scripts/index.ts',
+  entry: './src/typescript/index.ts',
   output: {
     path: path.resolve(__dirname, 'docs'),
   },
