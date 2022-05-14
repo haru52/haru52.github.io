@@ -5,5 +5,6 @@
 # 3rd party code
 .github/vale_styles/
 
+# Others
 /tsconfig.json
 /docs/
