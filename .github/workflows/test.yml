@@ -1,0 +1,42 @@
+---
+name: Test
+on:
+  push:
+    branches: main
+  pull_request:
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - name: "Lint: credentials"
+        run: npx secretlint "**/*"
+      - name: "Lint: text (prose)"
+        uses: errata-ai/vale-action@v1
+        with:
+          files: '["README.md", "CONTRIBUTING.md", "SECURITY.md", ".github/PULL_REQUEST_TEMPLATE.md", ".github/ISSUE_TEMPLATE", ".github/vale_styles/Microsoft"]'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: "Lint: Git commit message"
+        uses: wagoid/commitlint-github-action@v4
+        with:
+          configFile: .commitlintrc.yml
+      - name: "Lint: npm"
+        run: npm run lint
+      - name: "Lint: shell script"
+        uses: ludeeus/action-shellcheck@master
+        with:
+          ignore_paths: .husky/_ node_modules
+      - name: "Lint: GitHub Actions workflow"
+        run: |
+          bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
+          ./actionlint -color
+        shell: bash
