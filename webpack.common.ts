@@ -8,7 +8,7 @@ import 'webpack-dev-server';
 /* eslint-enable import/no-extraneous-dependencies */
 
 function initHtmlWebpackPlugins() {
-  const pagesGlob = 'src/pages/**/';
+  const pagesGlob = 'src/views/**/';
   const pugPaths = globule.find(`${pagesGlob}*.pug`, {
     ignore: `${pagesGlob}_*.pug`,
   });
@@ -57,7 +57,7 @@ const config: webpack.Configuration = {
           {
             loader: 'pug-loader',
             options: {
-              root: path.resolve(__dirname, 'src/pages'),
+              root: path.resolve(__dirname, 'src/views'),
             },
           },
         ],

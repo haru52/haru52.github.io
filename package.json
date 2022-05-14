@@ -14,7 +14,7 @@
     "lint:credentials": "[ \"$CI\" = 'true' ] || secretlint \"**/*\"",
     "lint:md": "markdownlint . \".?*/**/*.{md,markdown}\"",
     "lint:prettier": "prettier --check .",
-    "lint:pug": "markuplint \"src/pages/**/*.pug\"",
+    "lint:pug": "markuplint \"src/views/**/*.pug\"",
     "lint:style": "stylelint --cache \"src/assets/stylesheets/**/*.scss\"",
     "lint:es": "eslint --ext ts,js --cache .",
     "format": "run-s --continue-on-error format:*",
