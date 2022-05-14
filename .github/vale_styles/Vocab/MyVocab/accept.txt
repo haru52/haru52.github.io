@@ -1,0 +1,12 @@
+actionlint
+boilerplates
+Commitizen
+commitlint
+conventionalcommits
+Dependabot
+gibo
+haru
+npm
+repo
+reviewdog
+Secretlint
