@@ -1,0 +1,9 @@
+# Use markdownlint-cli instead of Prettier
+*.md
+*.markdown
+
+# 3rd party code
+.github/vale_styles/
+
+/tsconfig.json
+/docs/
