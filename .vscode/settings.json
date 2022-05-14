@@ -1,0 +1,11 @@
+{
+  "css.validate": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "scss"],
+  "vale.core.useCLI": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "DavidAnson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "errata-ai.vale-server",
+    "esbenp.prettier-vscode",
+    "RomanPeshkov.vscode-text-tables",
+    "stylelint.vscode-stylelint",
+    "timonwong.shellcheck",
+    "yusukehirao.vscode-markuplint"
+  ]
+}
