@@ -23,7 +23,7 @@
     "format:style": "npm run lint:style -- --fix",
     "format:es": "npm run lint:es -- --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack serve --config webpack.dev.ts --open",
+    "dev": "webpack serve --config webpack.dev.ts --open",
     "prebuild": "npm run clean",
     "build": "webpack --config webpack.prod.ts",
     "commit": "cz",
