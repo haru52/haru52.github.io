@@ -1,0 +1,12 @@
+---
+"*":
+  - secretlint
+  - prettier -c
+"*.{md,markdown}":
+  - markdownlint
+  - make lint-text
+"{*.sh,.husky/*}": shellcheck
+"*.pug": markuplint
+"*.scss": stylelint --cache
+"*.{ts,js}": eslint --cache
+".github/workflows/*.{yml,yaml}": actionlint
