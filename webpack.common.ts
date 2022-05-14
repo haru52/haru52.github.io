@@ -38,6 +38,20 @@ const config: webpack.Configuration = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
+        test: /\.(jpg|jpeg|png|gif|webp)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[hash][ext][query]',
+        },
+      },
+      {
+        test: /\.asc$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/[base]',
+        },
+      },
+      {
         test: /\.pug$/,
         use: [
           {
@@ -50,7 +64,10 @@ const config: webpack.Configuration = {
       },
     ],
   },
-  plugins: [new MiniCssExtractPlugin(), ...initHtmlWebpackPlugins()],
+  plugins: [
+    new MiniCssExtractPlugin({ filename: 'assets/stylesheets/main.css' }),
+    ...initHtmlWebpackPlugins(),
+  ],
 };
 
 export default config;
