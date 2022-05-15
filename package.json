@@ -9,7 +9,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf docs",
+    "clean": "rm -rf docs; git restore docs/CNAME",
     "lint": "run-s --continue-on-error lint:*",
     "lint:credentials": "[ \"$CI\" = 'true' ] || secretlint \"**/*\"",
     "lint:md": "markdownlint . \".?*/**/*.{md,markdown}\"",
