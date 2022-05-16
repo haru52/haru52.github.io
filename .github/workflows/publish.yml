@@ -21,4 +21,4 @@ jobs:
         with:
           add: docs
           default_author: github_actions
-          message: "feat: update docs to deploy"
+          message: "feat: publish website resources to deploy"
