@@ -26,6 +26,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: "Lint: Git commit message"
+        if: github.actor != 'dependabot[bot]'
         uses: wagoid/commitlint-github-action@v4
         with:
           configFile: .commitlintrc.yml
