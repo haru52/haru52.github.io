@@ -6,7 +6,7 @@
 | ----------------------------------------------------------- | ------------------------------------------------ |
 | Node.js and npm                                             | `engines` values in [package.json](package.json) |
 | [gibo](https://github.com/simonwhitaker/gibo#readme)        | >=2.2.7                                          |
-| [Vale CLI](https://vale.sh/)                                | >=2.16.0                                         |
+| [Vale CLI](https://vale.sh/)                                | >=2.17.0                                         |
 | [ShellCheck](https://github.com/koalaman/shellcheck#readme) | >=0.8.0                                          |
 | [actionlint](https://github.com/rhysd/actionlint#readme)    | [.tool-versions](.tool-versions)                 |
 
@@ -23,13 +23,13 @@
 
 1. Fork this repository
 2. Develop and create a Pull Request (PR) according to the above rules
-3. This repository maintainers will review the PR
+3. This repo maintainers will review the PR
 4. The maintainers will merge the PR branch if they approved it, otherwise they will close it without merging
 
 ## Installation
 
 ```sh
-gh repo clone <your org>/haru52.github.io # Clone the repository
+gh repo clone <your org>/haru52.github.io # Clone the repo
 cd haru52.github.io
 make
 ```
