@@ -1,13 +1,10 @@
 doctype html
-html.h-100(lang='ja')
+html.h-100(lang='en')
   head
     meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(http-equiv='X-UA-Compatible', content='ie=edge')
-    meta(name='description', content='haru website')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(name='description' content='haru website')
     title haru
-    link(rel='stylesheet', href='css/bootstrap.min.css')
-    link(rel='stylesheet', href='css/style.css')
   body.d-flex.flex-column.h-100
     header
       nav.navbar.fixed-top.navbar-dark.bg-dark
@@ -21,48 +18,85 @@ html.h-100(lang='ja')
           |  Links
         ul
           li
-            a(href='https://blufflog.hatenablog.com', target='_blank', rel='noreferrer') Blog (Blufflog)
+            a(
+              href='https://blufflog.hatenablog.com/'
+              target='_blank'
+              rel='noreferrer'
+            ) Blog (Blufflog)
           li
-            a(href='https://twitter.com/haruu_52', target='_blank', rel='noreferrer')
+            a(
+              href='https://twitter.com/haruu_52'
+              target='_blank'
+              rel='noreferrer'
+            )
               i.fab.fa-twitter.fa-fw
               |  Twitter (@haruu_52)
           li
-            a(href='https://www.youtube.com/channel/UCydb9noOeo_joGVbbwlq9vA', target='_blank', rel='noreferrer')
+            a(
+              href='https://www.youtube.com/channel/UCydb9noOeo_joGVbbwlq9vA'
+              target='_blank'
+              rel='noreferrer'
+            )
               i.fab.fa-youtube.fa-fw
               |  YouTube (haru)
           li
-            a(href='https://github.com/haru52', target='_blank', rel='noreferrer')
+            a(
+              href='https://github.com/haru52'
+              target='_blank'
+              rel='noreferrer'
+            )
               i.fab.fa-github.fa-fw
               |  GitHub (@haru52)
           li
-            a(href='https://qiita.com/haru52', target='_blank', rel='noreferrer') Qiita (@haru52)
+            a(
+              href='https://qiita.com/haru52'
+              target='_blank'
+              rel='noreferrer'
+            ) Qiita (@haru52)
           li
-            a(href='https://filmarks.com/users/fukky28', target='_blank', rel='noreferrer') Filmarks (@fukky28)
+            a(
+              href='https://filmarks.com/users/fukky28'
+              target='_blank'
+              rel='noreferrer'
+            ) Filmarks (@fukky28)
       hr
       section
         h2
           i.fas.fa-paint-brush.fa-fw
           |  Work
         h3
-          a(href='https://bluffbox.herokuapp.com', target='_blank', rel='noreferrer') Bluffbox
+          a(
+            href='https://bluffbox.herokuapp.com/'
+            target='_blank'
+            rel='noreferrer'
+          ) Bluffbox
         ul
-          li magic information management website for magicians
-          li web app framework: Ruby on Rails
+          li Magic information management website for magicians
+          li Web app framework: Ruby on Rails
           li DB: MySQL
-          li deployment: Heroku
+          li Deployment: Heroku
           li CI/CD: CircleCI
         h3
-          a(href='https://github.com/haru52/encrypter', target='_blank', rel='noreferrer') Encrypter
+          a(
+            href='https://github.com/haru52/encrypter'
+            target='_blank'
+            rel='noreferrer'
+          ) Encrypter
         ul
           li CLI tool that encrypts/decrypts a file and a directory
           li
-            a(href='https://www.gnupg.org/', target='_blank', rel='noreferrer') GPG
+            a(href='https://www.gnupg.org/' target='_blank' rel='noreferrer')
+              | GPG
             |  wrapper shell script
         h3
-          a(href='https://github.com/haru52/utility_tools', target='_blank', rel='noreferrer') Utility Tools
+          a(
+            href='https://github.com/haru52/utility_tools'
+            target='_blank'
+            rel='noreferrer'
+          ) Utility Tools
         ul
           li CLI utility tools
-          li programming languages: mainly Python
+          li Programming languages: mainly Python
       hr
       section
         h2
@@ -74,7 +108,7 @@ html.h-100(lang='ja')
         ul
           li HTML
           li CSS
-          li Sass (SCSS)
+          li SCSS (Sass)
           li JavaScript
           li TypeScript
           li Python
@@ -88,21 +122,19 @@ html.h-100(lang='ja')
           |  Frameworks / Libraries
         ul
           li webpack
-          li Babel
           li Jest
+          li Babel
           li Ruby on Rails
           li RSpec
           li Bootstrap
-          li React
         h3
           i.fas.fa-tools.fa-fw
           |  Tools
         ul
           li Git
           li GitHub
-          li CircleCI
+          li GitHub Actions
           li Heroku
-          li Firebase
           li JetBrains IDE (e.g., IntelliJ IDEA)
           li Visual Studio Code
           li Vim
@@ -152,22 +184,31 @@ html.h-100(lang='ja')
           i.fas.fa-trophy.fa-fw
           |  My Best
         ul
-          li
-            a(href='/my_best_10_films') My Best 10 Films
+          li: a(href='my_best_10_films.html') My Best 10 Films
       hr
       section
         h2
           i.fas.fa-envelope.fa-fw
           |  Contact
         p
-          a(href='https://docs.google.com/forms/d/e/1FAIpQLSddUF5PDhRpYPZ8VGVZClTBQCo-SQb4QzszOZanmWjUnH_stw/viewform?usp=sf_link', target='_blank', rel='noreferrer')
-            | Contact form
+          a(
+            href='https://docs.google.com/forms/d/e/1FAIpQLSddUF5PDhRpYPZ8VGVZClTBQCo-SQb4QzszOZanmWjUnH_stw/viewform?usp=sf_link'
+            target='_blank'
+            rel='noreferrer'
+          ) Contact form
       section
         h2
           i.fas.fa-key.fa-fw
-          |  PGP/GPG key ID
-        p
-          a(href=require('../assets/haru52_pub.asc'), download='haru52_pub.asc') 0x47EBF5C0762E679D
+          |  PGP/GPG Key IDs
+        ul
+          li
+            a(
+              href=require('../assets/haru52_pub.asc')
+              download='haru52_pub.asc'
+            ) 0x47EBF5C0762E679D
+            |  (Primary)
+            ul
+              li 0x723D70A87B5D1713 (Sign)
     footer.footer.mt-auto.py-3
       .container.text-center
-        span.text-muted &copy; 2018-2022 haru
+        span.text-muted © 2018-2022 haru
