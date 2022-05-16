@@ -48,7 +48,7 @@
   "devDependencies": {
     "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^17.0.0",
-    "@commitlint/cz-commitlint": "^16.3.0",
+    "@commitlint/cz-commitlint": "^17.0.0",
     "@markuplint/pug-parser": "^2.2.0",
     "@secretlint/secretlint-rule-preset-recommend": "^5.2.0",
     "@types/bootstrap": "^5.1.11",
