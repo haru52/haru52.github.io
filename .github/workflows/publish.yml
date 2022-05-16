@@ -1,13 +1,13 @@
 ---
-name: Deploy
+name: Publish
 on:
   workflow_run:
     workflows: Test
     types: completed
     branches: main
 jobs:
-  deploy:
-    name: Deploy
+  publish:
+    name: Publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
