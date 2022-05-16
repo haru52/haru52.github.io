@@ -1,0 +1,203 @@
+extends layouts/_layout
+block append meta
+  meta(name='description' content='haru website.')
+  meta(name='keywords' content='haru,haru52,haruu_52')
+block content
+  h1 haru
+  section
+    h2
+      i.fas.fa-link.fa-fw
+      |  Links
+    ul
+      li
+        a(
+          href='https://blufflog.hatenablog.com/'
+          target='_blank'
+          rel='noreferrer'
+        ) Blog (Blufflog)
+      li
+        a(
+          href='https://twitter.com/haruu_52'
+          target='_blank'
+          rel='noreferrer'
+        )
+          i.fab.fa-twitter.fa-fw
+          |  Twitter (@haruu_52)
+      li
+        a(
+          href='https://www.youtube.com/channel/UCydb9noOeo_joGVbbwlq9vA'
+          target='_blank'
+          rel='noreferrer'
+        )
+          i.fab.fa-youtube.fa-fw
+          |  YouTube (haru)
+      li
+        a(
+          href='https://github.com/haru52'
+          target='_blank'
+          rel='noreferrer'
+        )
+          i.fab.fa-github.fa-fw
+          |  GitHub (@haru52)
+      li
+        a(
+          href='https://qiita.com/haru52'
+          target='_blank'
+          rel='noreferrer'
+        ) Qiita (@haru52)
+      li
+        a(
+          href='https://filmarks.com/users/fukky28'
+          target='_blank'
+          rel='noreferrer'
+        ) Filmarks (@fukky28)
+  hr
+  section
+    h2
+      i.fas.fa-paint-brush.fa-fw
+      |  Work
+    h3
+      a(
+        href='https://bluffbox.herokuapp.com/'
+        target='_blank'
+        rel='noreferrer'
+      ) Bluffbox
+    ul
+      li Magic information management website for magicians
+      li Web app framework: Ruby on Rails
+      li DB: MySQL
+      li Deployment: Heroku
+      li CI/CD: CircleCI
+    h3
+      a(
+        href='https://github.com/haru52/encrypter'
+        target='_blank'
+        rel='noreferrer'
+      ) Encrypter
+    ul
+      li CLI tool that encrypts/decrypts a file and a directory
+      li
+        a(href='https://www.gnupg.org/' target='_blank' rel='noreferrer')
+          | GPG
+        |  wrapper shell script
+    h3
+      a(
+        href='https://github.com/haru52/utility_tools'
+        target='_blank'
+        rel='noreferrer'
+      ) Utility Tools
+    ul
+      li CLI utility tools
+      li Programming languages: mainly Python
+  hr
+  section
+    h2
+      i.fas.fa-toolbox.fa-fw
+      |  Skill
+    h3
+      i.fas.fa-code.fa-fw
+      |  Programming
+    ul
+      li HTML
+      li CSS
+      li SCSS (Sass)
+      li JavaScript
+      li TypeScript
+      li Python
+      li Java
+      li C
+      li Go
+      li SQL/RDB
+      li Google Apps Script
+    h3
+      i.fas.fa-book-open.fa-fw
+      |  Frameworks / Libraries
+    ul
+      li webpack
+      li Jest
+      li Babel
+      li Ruby on Rails
+      li RSpec
+      li Bootstrap
+    h3
+      i.fas.fa-tools.fa-fw
+      |  Tools
+    ul
+      li Git
+      li GitHub
+      li GitHub Actions
+      li Heroku
+      li JetBrains IDE (e.g., IntelliJ IDEA)
+      li Visual Studio Code
+      li Vim
+      li Chrome DevTools
+      li Trello
+      li JIRA
+      li Slack
+      li Zoom
+      li Miro
+      li Notion
+      li G Suite
+    h3
+      i.fas.fa-desktop.fa-fw
+      |  OS
+    ul
+      li
+        i.fab.fa-apple.fa-fw
+        |  Mac
+      li
+        i.fab.fa-windows.fa-fw
+        |  Windows
+      li
+        i.fab.fa-linux.fa-fw
+        |  Linux
+  hr
+  section
+    h2
+      i.fas.fa-graduation-cap.fa-fw
+      |  Major
+    ul
+      li File virtualization
+      li Data exchange/sharing/management
+  hr
+  section
+    h2
+      i.fas.fa-heart.fa-fw
+      |  Love
+    ul
+      li Magic
+      li Movie
+      li Kyoko Sakura
+      li Dr Pepper
+      li Nonsense
+  hr
+  section
+    h2
+      i.fas.fa-trophy.fa-fw
+      |  My Best
+    ul
+      li: a(href='my_best_10_films.html') My Best 10 Films
+  hr
+  section
+    h2
+      i.fas.fa-envelope.fa-fw
+      |  Contact
+    p
+      a(
+        href='https://docs.google.com/forms/d/e/1FAIpQLSddUF5PDhRpYPZ8VGVZClTBQCo-SQb4QzszOZanmWjUnH_stw/viewform?usp=sf_link'
+        target='_blank'
+        rel='noreferrer'
+      ) Contact form
+  section
+    h2
+      i.fas.fa-key.fa-fw
+      |  PGP/GPG Key IDs
+    ul
+      li
+        a(
+          href=require('../assets/haru52_pub.asc')
+          download='haru52_pub.asc'
+        ) 0x47EBF5C0762E679D
+        |  (Primary)
+        ul
+          li 0x723D70A87B5D1713 (Sign)
