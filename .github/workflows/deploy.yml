@@ -1,0 +1,24 @@
+---
+name: Deploy
+on:
+  workflow_run:
+    workflows: Test
+    types: completed
+    branches: main
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: docs
+          default_author: github_actions
+          message: "feat: update docs to deploy"
