@@ -1,3 +1,33 @@
-footer.footer.mt-auto.py-3
-  .container.text-center
-    span.text-muted © 2018-2022 haru
+footer.d-flex.flex-wrap.justify-content-between.align-items-center.py-3.my-4.border-top
+  .col-md-4.d-flex.align-items-center
+    a.mb-3.me-2.mb-md-0.text-muted.text-decoration-none.lh-1(href='/')
+      img(
+        src=require('../../assets/images/bluff_logo.png')
+        alt='Bluff logo'
+        width='24'
+        height='24'
+        decoding='async'
+      )
+    span.mb-3.mb-md-0.text-muted © 2018-2022 haru
+  ul.nav.col-md-4.justify-content-end.list-unstyled.d-flex
+    li.ms-3
+      a.text-muted(
+        href='https://github.com/haru52/haru52.github.io'
+        target='_blank'
+        rel='noreferrer'
+      )
+        i.fa-brands.fa-github
+    li.ms-3
+      a.text-muted(
+        href='https://twitter.com/haruu_52'
+        target='_blank'
+        rel='noreferrer'
+      )
+        i.fa-brands.fa-twitter
+    li.ms-3
+      a.text-muted(
+        href='https://www.youtube.com/channel/UCydb9noOeo_joGVbbwlq9vA'
+        target='_blank'
+        rel='noreferrer'
+      )
+        i.fa-brands.fa-youtube
