@@ -174,7 +174,7 @@ block content
   section
     h2
       i.fa-solid.fa-trophy.fa-fw
-      |  My Best
+      |  My best
     ul
       li: a(href='my_best_10_films.html') My Best 10 Films
   hr
@@ -191,13 +191,11 @@ block content
   section
     h2
       i.fa-solid.fa-key.fa-fw
-      |  PGP/GPG Key IDs
-    ul
-      li
-        a(
-          href=require('../assets/haru52_pub.asc')
-          download='haru52_pub.asc'
-        ) 0x47EBF5C0762E679D
-        |  (Primary)
-        ul
-          li 0x723D70A87B5D1713 (Sign)
+      |  PGP/GPG key IDs
+    h3 Primary key
+    p: a(
+      href=require('../assets/haru52_pub.asc')
+      download='haru52_pub.asc'
+    ) 0x47EBF5C0762E679D
+    h3 Subkey
+    p 0x723D70A87B5D1713 (Sign)
