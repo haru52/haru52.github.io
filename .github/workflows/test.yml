@@ -5,8 +5,8 @@ on:
     branches: main
   pull_request:
 jobs:
-  test:
-    name: Test
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -25,13 +25,13 @@ jobs:
           files: '["README.md", "CONTRIBUTING.md", "SECURITY.md", ".github/PULL_REQUEST_TEMPLATE.md", ".github/ISSUE_TEMPLATE", ".github/vale_styles/Microsoft"]'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: "Lint: npm"
+        run: npm run lint
       - name: "Lint: Git commit message"
         if: github.actor != 'dependabot[bot]'
         uses: wagoid/commitlint-github-action@v4
         with:
           configFile: .commitlintrc.yml
-      - name: "Lint: npm"
-        run: npm run lint
       - name: "Lint: shell script"
         uses: ludeeus/action-shellcheck@master
         with:
@@ -41,3 +41,26 @@ jobs:
           bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
           ./actionlint -color
         shell: bash
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+  # Uncomment the following test job after the test code has been written
+  # test:
+  #   name: Test
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-node@v3
+  #       with:
+  #         node-version-file: .node-version
+  #         cache: npm
+  #     - run: npm ci
+  #     - run: npm test
