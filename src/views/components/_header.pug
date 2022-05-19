@@ -1,4 +1,26 @@
-header
-  nav.navbar.fixed-top.navbar-dark.bg-dark
-    .container
-      a.navbar-brand(href='/') haru
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  .container
+    a.navbar-brand(href='/')
+      img.d-inline-block.align-text-top(
+        src=require('../../assets/images/bluff_logo.png')
+        alt='Bluff logo'
+        width='24'
+        height='24'
+        decoding='async'
+      )
+      |  haru
+    button.navbar-toggler(
+      type='button'
+      data-bs-toggle='collapse'
+      data-bs-target='#navbar-nav'
+      aria-controls='navbar-nav'
+      aria-expanded='false'
+      aria-label='Toggle navigation'
+    )
+      span.navbar-toggler-icon
+    #navbar-nav.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item: a#index-nav-link.nav-link(href='/') Home
+        li.nav-item
+          a#my-best-10-films-nav-link.nav-link(href='my_best_10_films.html')
+            | My Best 10 Films

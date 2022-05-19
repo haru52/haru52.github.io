@@ -64,6 +64,9 @@ const config: webpack.Configuration = {
       },
     ],
   },
+  resolve: {
+    extensions: ['.ts', '...'],
+  },
   plugins: [
     new MiniCssExtractPlugin({ filename: 'assets/stylesheets/main.css' }),
     ...initHtmlWebpackPlugins(),
