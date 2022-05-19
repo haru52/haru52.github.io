@@ -16,7 +16,7 @@
     "lint:prettier": "prettier --check .",
     "lint:pug": "markuplint \"src/views/**/*.pug\"",
     "lint:style": "stylelint --cache \"src/assets/stylesheets/**/*.scss\"",
-    "lint:es": "eslint --ext ts,js --cache .",
+    "lint:es": "eslint --cache .",
     "format": "run-s --continue-on-error format:*",
     "format:md": "npm run lint:md -- --fix",
     "format:prettier": "prettier --write .",
