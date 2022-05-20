@@ -1,9 +1,5 @@
 export default class CurrentNavLinkActivator {
-  #currentPageId: string;
-
-  constructor() {
-    this.#currentPageId = CurrentNavLinkActivator.#getCurrentPageId();
-  }
+  #currentPageId = CurrentNavLinkActivator.#getCurrentPageId();
 
   run() {
     const currentPageNavLink = document.getElementById(
