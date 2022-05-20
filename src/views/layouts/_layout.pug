@@ -1,11 +1,19 @@
+- let description = 'haru website.';
+- const defaultKeywords = 'haru,haru52,haruu_52';
+- const defaultTitle = 'haru';
+block variables
+
 doctype html
 html(lang='en')
   head
-    block meta
-      meta(charset='UTF-8')
-      meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    block title
-      title haru
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(name='description' content=description)
+    meta(
+      name='keywords'
+      content=keywords === undefined ? defaultKeywords : `${defaultKeywords},${keywords}`
+    )
+    title= title === undefined ? defaultTitle : `${title} - ${defaultTitle}`
     link(rel='icon' href=require('../assets/images/favicon.png'))
   body
     include ../components/_header

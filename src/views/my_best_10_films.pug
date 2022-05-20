@@ -1,10 +1,8 @@
 extends layouts/_layout
-block append meta
-  meta(name='description' content="haru's all time best favorite 10 films.")
-  meta(
-    name='keywords'
-    content='haru,haru52,haruu_52,film,movie,best films,best movies'
-  )
+block variables
+  - description = "haru's all time best favorite 10 films.";
+  - const keywords = 'film,movie,best films,best movies';
+  - const title = 'My Best 10 Films';
 block content
   h1 My Best 10 Films
   ol
