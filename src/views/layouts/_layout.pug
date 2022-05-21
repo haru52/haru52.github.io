@@ -1,7 +1,10 @@
 block variables
   - let description = 'haru website.';
-  - const defaultKeywords = 'haru,haru52,haruu_52';
-  - const defaultTitle = 'haru';
+
+- const defaultKeywords = 'haru,haru52,haruu_52';
+- const keywords = pageKeywords === undefined ? defaultKeywords : `${defaultKeywords},${pageKeywords}`;
+- const defaultTitle = 'haru';
+- const title = pageTitle === undefined ? defaultTitle : `${pageTitle} - ${defaultTitle}`;
 
 doctype html
 html(lang='en')
@@ -9,15 +12,13 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     meta(name='description' content=description)
-    meta(
-      name='keywords'
-      content=keywords === undefined ? defaultKeywords : `${defaultKeywords},${keywords}`
-    )
-    title= title === undefined ? defaultTitle : `${title} - ${defaultTitle}`
+    meta(name='keywords' content=keywords)
+    title= title
     link(rel='icon' href=require('../assets/images/favicon.png'))
   body
     include ../components/_header
     .container
       article
+        h1= pageTitle === undefined ? title : pageTitle
         block content
       include ../components/_footer
