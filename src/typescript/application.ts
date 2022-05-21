@@ -1,4 +1,4 @@
-import CurrentNavLinkActivator from './current-nav-link-activator';
+import type CurrentNavLinkActivator from './current-nav-link-activator';
 
 export default class Application {
   #currentNavLinkActivator: CurrentNavLinkActivator;
