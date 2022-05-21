@@ -3,7 +3,7 @@ block breadcrumb_items
   li.breadcrumb-item.active(aria-current='page') Home
 block content
   section
-    h2
+    h2#links
       i.fa-solid.fa-link.fa-fw
       |  Links
     ul
@@ -32,10 +32,10 @@ block content
           | Filmarks (@fukky28)
   hr
   section
-    h2
+    h2#work
       i.fa-solid.fa-paint-brush.fa-fw
       |  Work
-    h3
+    h3#bluffbox
       a(href='https://bluffbox.herokuapp.com/' target='_blank' rel='noreferrer') Bluffbox
     ul
       li Magic information management website for magicians
@@ -43,14 +43,14 @@ block content
       li DB: MySQL
       li Deployment: Heroku
       li CI/CD: CircleCI
-    h3
+    h3#encrypter
       a(href='https://github.com/haru52/encrypter' target='_blank' rel='noreferrer') Encrypter
     ul
       li CLI tool that encrypts/decrypts a file and a directory
       li
         a(href='https://www.gnupg.org/' target='_blank' rel='noreferrer') GPG
         |  wrapper shell script
-    h3
+    h3#base-template-repository
       a(href='https://github.com/haru52/base_template' target='_blank' rel='noreferrer')
         | Base Template Repository
     ul
@@ -58,10 +58,10 @@ block content
       li Provide full compliance with the community standards
   hr
   section
-    h2
+    h2#skill
       i.fa-solid.fa-toolbox.fa-fw
       |  Skill
-    h3
+    h3#programming
       i.fa-solid.fa-code.fa-fw
       |  Programming
     ul
@@ -76,7 +76,7 @@ block content
       li Go
       li SQL/RDB
       li Google Apps Script
-    h3
+    h3#frameworks-libraries
       i.fa-solid.fa-book-open.fa-fw
       |  Frameworks / Libraries
     ul
@@ -86,7 +86,7 @@ block content
       li Ruby on Rails
       li RSpec
       li Bootstrap
-    h3
+    h3#tools
       i.fa-solid.fa-tools.fa-fw
       |  Tools
     ul
@@ -105,7 +105,7 @@ block content
       li Miro
       li Notion
       li G Suite
-    h3
+    h3#os
       i.fa-solid.fa-desktop.fa-fw
       |  OS
     ul
@@ -120,7 +120,7 @@ block content
         |  Linux
   hr
   section
-    h2
+    h2#major
       i.fa-solid.fa-graduation-cap.fa-fw
       |  Major
     ul
@@ -128,7 +128,7 @@ block content
       li Data exchange/sharing/management
   hr
   section
-    h2
+    h2#love
       i.fa-solid.fa-heart.fa-fw
       |  Love
     ul
@@ -139,14 +139,14 @@ block content
       li Nonsense
   hr
   section
-    h2
+    h2#my-best
       i.fa-solid.fa-trophy.fa-fw
       |  My best
     ul
       li: a(href='my_best_10_films.html') My Best 10 Films
   hr
   section
-    h2
+    h2#contact
       i.fa-solid.fa-envelope.fa-fw
       |  Contact
     p
@@ -156,10 +156,10 @@ block content
         rel='noreferrer'
       ) Contact form
   section
-    h2
+    h2#pgp-gpg-key-ids
       i.fa-solid.fa-key.fa-fw
       |  PGP/GPG key IDs
-    h3 Primary key
+    h3#primary-key Primary key
     p: a(href=require('../assets/haru52_pub.asc') download='haru52_pub.asc') 0x47EBF5C0762E679D
-    h3 Subkey
+    h3#subkey Subkey
     p 0x723D70A87B5D1713 (Sign)
