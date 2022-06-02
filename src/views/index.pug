@@ -32,31 +32,31 @@ block content
           | Filmarks (@fukky28)
   hr
   section
-    h2#work
-      i.fa-solid.fa-paint-brush.fa-fw
-      |  Work
-    h3#bluffbox
-      a(href='https://bluffbox.herokuapp.com/' target='_blank' rel='noreferrer') Bluffbox
+    h2#contact
+      i.fa-solid.fa-envelope.fa-fw
+      |  Contact
+    p
+      a(
+        href='https://docs.google.com/forms/d/e/1FAIpQLSddUF5PDhRpYPZ8VGVZClTBQCo-SQb4QzszOZanmWjUnH_stw/viewform?usp=sf_link'
+        target='_blank'
+        rel='noreferrer'
+      ) Contact form
+  section
+    h2#pgp-gpg-key-ids
+      i.fa-solid.fa-key.fa-fw
+      |  PGP/GPG Key IDs
+    h3#primary-key Primary Key
+    p: a(href=require('../assets/haru52_pub.asc') download='haru52_pub.asc') 0x47EBF5C0762E679D
+    h3#subkey Subkey
+    p 0x723D70A87B5D1713 (Sign)
+  hr
+  section
+    h2#research-interests
+      i.fa-solid.fa-graduation-cap.fa-fw
+      |  Research Interests
     ul
-      li Magic information management website for magicians
-      li Web app framework: Ruby on Rails
-      li DB: MySQL
-      li Deployment: Heroku
-      li CI/CD: CircleCI
-    h3#encrypter
-      a(href='https://github.com/haru52/encrypter#readme' target='_blank' rel='noreferrer')
-        | Encrypter
-    ul
-      li CLI tool that encrypts/decrypts a file and a directory
-      li
-        a(href='https://www.gnupg.org/' target='_blank' rel='noreferrer') GPG
-        |  wrapper shell scripts
-    h3#base-template-repository
-      a(href='https://github.com/haru52/base_template#readme' target='_blank' rel='noreferrer')
-        | Base Template Repository
-    ul
-      li Fully automated template repository
-      li Provide full compliance with the community standards
+      li File virtualization
+      li Data exchange/sharing/management
   hr
   section
     h2#skills
@@ -122,12 +122,31 @@ block content
         |  Linux
   hr
   section
-    h2#research-interests
-      i.fa-solid.fa-graduation-cap.fa-fw
-      |  Research Interests
+    h2#work
+      i.fa-solid.fa-paint-brush.fa-fw
+      |  Work
+    h3#bluffbox
+      a(href='https://bluffbox.herokuapp.com/' target='_blank' rel='noreferrer') Bluffbox
     ul
-      li File virtualization
-      li Data exchange/sharing/management
+      li Magic information management website for magicians
+      li Web app framework: Ruby on Rails
+      li DB: MySQL
+      li Deployment: Heroku
+      li CI/CD: CircleCI
+    h3#encrypter
+      a(href='https://github.com/haru52/encrypter#readme' target='_blank' rel='noreferrer')
+        | Encrypter
+    ul
+      li CLI tool that encrypts/decrypts a file and a directory
+      li
+        a(href='https://www.gnupg.org/' target='_blank' rel='noreferrer') GPG
+        |  wrapper shell scripts
+    h3#base-template-repository
+      a(href='https://github.com/haru52/base_template#readme' target='_blank' rel='noreferrer')
+        | Base Template Repository
+    ul
+      li Fully automated template repository
+      li Provide full compliance with the community standards
   hr
   section
     h2#love
@@ -146,22 +165,3 @@ block content
       |  My best
     ul
       li: a(href='my_best_10_films.html') My Best 10 Films
-  hr
-  section
-    h2#contact
-      i.fa-solid.fa-envelope.fa-fw
-      |  Contact
-    p
-      a(
-        href='https://docs.google.com/forms/d/e/1FAIpQLSddUF5PDhRpYPZ8VGVZClTBQCo-SQb4QzszOZanmWjUnH_stw/viewform?usp=sf_link'
-        target='_blank'
-        rel='noreferrer'
-      ) Contact form
-  section
-    h2#pgp-gpg-key-ids
-      i.fa-solid.fa-key.fa-fw
-      |  PGP/GPG Key IDs
-    h3#primary-key Primary Key
-    p: a(href=require('../assets/haru52_pub.asc') download='haru52_pub.asc') 0x47EBF5C0762E679D
-    h3#subkey Subkey
-    p 0x723D70A87B5D1713 (Sign)
