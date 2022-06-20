@@ -29,7 +29,7 @@ jobs:
         run: npm run lint
       - name: "Lint: Git commit message"
         if: github.actor != 'dependabot[bot]'
-        uses: wagoid/commitlint-github-action@v4
+        uses: wagoid/commitlint-github-action@v5
         with:
           configFile: .commitlintrc.yml
       - name: "Lint: shell script"
