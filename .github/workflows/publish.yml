@@ -1,6 +1,6 @@
 ---
 name: Publish
-on:
+"on":
   workflow_run:
     workflows: Test
     types: completed
@@ -23,4 +23,4 @@ jobs:
         with:
           add: docs
           default_author: github_actions
-          message: "feat: publish website resources to deploy"
+          message: "build: publish website resources to deploy"
