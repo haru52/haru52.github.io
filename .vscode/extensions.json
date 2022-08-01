@@ -4,7 +4,6 @@
     "DavidAnson.vscode-markdownlint",
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
-    "eg2.vscode-npm-script",
     "errata-ai.vale-server",
     "esbenp.prettier-vscode",
     "ms-vscode.makefile-tools",

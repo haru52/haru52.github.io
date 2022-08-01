@@ -1,6 +1,6 @@
 ---
 name: Test
-on:
+"on":
   push:
     branches: main
   pull_request:
@@ -22,24 +22,37 @@ jobs:
       - name: "Lint: text (prose)"
         uses: errata-ai/vale-action@v2
         with:
-          files: '["README.md", "CONTRIBUTING.md", "SECURITY.md", ".github/PULL_REQUEST_TEMPLATE.md", ".github/ISSUE_TEMPLATE", ".github/vale_styles/Microsoft"]'
+          files: >
+            ["README.md", "CONTRIBUTING.md", "SECURITY.md",
+            ".github/PULL_REQUEST_TEMPLATE.md", ".github/ISSUE_TEMPLATE"]
+          reporter: github-check
+          fail_on_error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: "Lint: npm"
         run: npm run lint
       - name: "Lint: Git commit message"
+        # Skip commitlint if a commit is created by Dependabot.
+        # Because a line length of a commit message created by Dependabot often
+        # exceeds 100 characters.
         if: github.actor != 'dependabot[bot]'
         uses: wagoid/commitlint-github-action@v5
         with:
           configFile: .commitlintrc.yml
+      - name: "Lint: YAML"
+        uses: karancode/yamllint-github-action@v2.0.0
+        with:
+          yamllint_strict: true
       - name: "Lint: shell script"
         uses: ludeeus/action-shellcheck@master
         with:
           ignore_paths: .husky/_ node_modules
       - name: "Lint: GitHub Actions workflow"
+        # yamllint disable rule:line-length
         run: |
           bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
           ./actionlint -color
+        # yamllint enable rule:line-length
         shell: bash
   build:
     name: Build
@@ -52,6 +65,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+# yamllint disable rule:comments-indentation
   # Uncomment the following test job after the test code has been written
   # test:
   #   name: Test
@@ -64,3 +78,4 @@ jobs:
   #         cache: npm
   #     - run: npm ci
   #     - run: npm test
+# yamllint enable rule:comments-indentation
