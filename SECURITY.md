@@ -1,3 +1,4 @@
+<!-- vale Microsoft.Headings = NO -->
 # Security Policy
 
 ## Supported Versions

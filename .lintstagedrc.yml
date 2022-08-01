@@ -1,10 +1,11 @@
 ---
 "*":
   - secretlint
-  - prettier -c
+  - prettier --check
 "*.{md,markdown}":
   - markdownlint
   - make lint-text
+"*.{yml,yaml}": make lint-yaml
 "{*.sh,.husky/*}": shellcheck
 "*.pug": markuplint
 "*.scss": stylelint --cache
