@@ -5,10 +5,10 @@
 | Tool                                                        | Version                                          |
 | ----------------------------------------------------------- | ------------------------------------------------ |
 | Node.js and npm                                             | `engines` values in [package.json](package.json) |
-| [gibo](https://github.com/simonwhitaker/gibo#readme)        | >=2.2.7                                          |
-| [Vale CLI](https://vale.sh/)                                | >=2.20.0                                         |
-| [yamllint](https://yamllint.readthedocs.io/)                | >=1.27.1                                         |
-| [ShellCheck](https://github.com/koalaman/shellcheck#readme) | >=0.8.0                                          |
+| [gibo](https://github.com/simonwhitaker/gibo#readme)        | ^2.2.7                                           |
+| [Vale CLI](https://vale.sh/)                                | ^2.20.1                                          |
+| [yamllint](https://yamllint.readthedocs.io/)                | ^1.27.1                                          |
+| [ShellCheck](https://github.com/koalaman/shellcheck#readme) | >=0.8.0 <1.0.0                                   |
 | [actionlint](https://github.com/rhysd/actionlint#readme)    | [.tool-versions](.tool-versions)                 |
 
 ## Rules

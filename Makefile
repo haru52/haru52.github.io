@@ -1,10 +1,10 @@
-.PHONY: dev-install lint lint-npm lint-text lint-yaml lint-sh lint-action update-gi
+.PHONY: dev-install lint lint-npm lint-text lint-yml lint-sh lint-action update-gi
 
 dev-install:
 	npm ci
 	vale sync
 
-lint: lint-npm lint-text lint-yaml lint-sh lint-action
+lint: lint-npm lint-text lint-yml lint-sh lint-action
 
 lint-npm:
 	npm run lint
@@ -12,7 +12,7 @@ lint-npm:
 lint-text:
 	vale README.md CONTRIBUTING.md SECURITY.md .github/*.md .github/ISSUE_TEMPLATE
 
-lint-yaml:
+lint-yml:
 	yamllint --strict .
 
 lint-sh:
