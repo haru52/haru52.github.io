@@ -5,8 +5,9 @@
 "*.{md,markdown}":
   - markdownlint
   - make lint-text
-"*.{yml,yaml}": make lint-yaml
-"{*.sh,.husky/*}": shellcheck
+"*.{yml,yaml}": make lint-yml
+"*.sh": shellcheck
+".husky/*": shellcheck
 "*.pug": markuplint
 "*.scss": stylelint --cache
 "*.{ts,js}": eslint --cache
