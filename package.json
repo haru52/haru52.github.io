@@ -50,7 +50,7 @@
     "@commitlint/cz-commitlint": "^17.1.2",
     "@markuplint/pug-parser": "^2.2.2",
     "@secretlint/secretlint-rule-preset-recommend": "^5.2.4",
-    "@types/bootstrap": "^5.2.4",
+    "@types/bootstrap": "^5.2.5",
     "@types/globule": "^1.1.4",
     "@types/node": ">=16.0.0 <16.17.0",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
@@ -90,6 +90,6 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",
     "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.1"
+    "bootstrap": "^5.2.2"
   }
 }
