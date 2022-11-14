@@ -76,7 +76,7 @@
     "sass": "^1.55.0",
     "sass-loader": "^13.1.0",
     "secretlint": "^5.3.0",
-    "stylelint": "^14.14.1",
+    "stylelint": "^14.15.0",
     "stylelint-config-prettier-scss": ">=0.0.1 <1.0.0",
     "stylelint-config-standard-scss": "^5.0.0",
     "ts-loader": "^9.4.1",
