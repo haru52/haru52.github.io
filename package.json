@@ -50,7 +50,7 @@
     "@commitlint/cz-commitlint": "^17.2.0",
     "@markuplint/pug-parser": "^2.2.2",
     "@secretlint/secretlint-rule-preset-recommend": "^5.3.0",
-    "@types/bootstrap": "^5.2.5",
+    "@types/bootstrap": "^5.2.6",
     "@types/globule": "^1.1.4",
     "@types/node": ">=16.0.0 <16.19.0",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
