@@ -48,7 +48,7 @@
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.1.0",
     "@commitlint/cz-commitlint": "^17.2.0",
-    "@markuplint/pug-parser": "^2.2.2",
+    "@markuplint/pug-parser": "^2.2.4",
     "@secretlint/secretlint-rule-preset-recommend": "^5.3.0",
     "@types/bootstrap": "^5.2.6",
     "@types/globule": "^1.1.4",
