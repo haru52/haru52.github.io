@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/haru52/haru52.github.io#readme",
   "devDependencies": {
-    "@commitlint/cli": "^17.2.0",
+    "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.1.0",
     "@commitlint/cz-commitlint": "^17.2.0",
     "@markuplint/pug-parser": "^2.2.2",
