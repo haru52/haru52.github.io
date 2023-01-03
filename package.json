@@ -64,7 +64,7 @@
     "eslint-plugin-import": "^2.26.0",
     "globule": "^1.3.4",
     "html-webpack-plugin": "^5.5.0",
-    "husky": "^8.0.2",
+    "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "markdownlint-cli": ">=0.32.2 <1.0.0",
     "markuplint": "^3.0.1",
