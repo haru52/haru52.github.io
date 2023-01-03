@@ -52,7 +52,7 @@
     "@secretlint/secretlint-rule-preset-recommend": "^6.0.1",
     "@types/bootstrap": "^5.2.6",
     "@types/globule": "^1.1.4",
-    "@types/node": "<18.13.0",
+    "@types/node": ">=18.0.0 <18.13.0",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
     "commitizen": "^4.2.6",
