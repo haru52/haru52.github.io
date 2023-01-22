@@ -2,3 +2,4 @@
 extends: [markuplint:recommended]
 parser:
   .pug$: "@markuplint/pug-parser"
+excludeFiles: [./src/views/components/_google_analytics.pug]
