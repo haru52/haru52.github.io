@@ -3,7 +3,7 @@ import CurrentNavLinkActivator from './current-nav-link-activator';
 
 @injectable()
 export default class Application {
-  #currentNavLinkActivator: CurrentNavLinkActivator;
+  #currentNavLinkActivator;
 
   constructor(currentNavLinkActivator: CurrentNavLinkActivator) {
     this.#currentNavLinkActivator = currentNavLinkActivator;
