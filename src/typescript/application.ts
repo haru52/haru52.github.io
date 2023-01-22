@@ -1,5 +1,7 @@
-import type CurrentNavLinkActivator from './current-nav-link-activator';
+import { injectable } from 'tsyringe';
+import CurrentNavLinkActivator from './current-nav-link-activator';
 
+@injectable()
 export default class Application {
   #currentNavLinkActivator: CurrentNavLinkActivator;
 

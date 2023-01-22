@@ -1,5 +1,8 @@
+import { injectable } from 'tsyringe';
+
+@injectable()
 export default class CurrentNavLinkActivator {
-  #currentPageId = CurrentNavLinkActivator.#getCurrentPageId();
+  #currentPageId = CurrentNavLinkActivator.getCurrentPageId();
 
   run() {
     const currentPageNavLink = document.getElementById(
@@ -12,7 +15,7 @@ export default class CurrentNavLinkActivator {
     currentPageNavLink.setAttribute('aria-current', 'page');
   }
 
-  static #getCurrentPageId() {
+  private static getCurrentPageId() {
     const { pathname } = window.location;
 
     if (pathname === '/') return 'index';
