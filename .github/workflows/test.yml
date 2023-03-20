@@ -40,7 +40,7 @@ jobs:
         with:
           configFile: .commitlintrc.yml
       - name: "Lint: YAML"
-        uses: karancode/yamllint-github-action@v2.1.0
+        uses: karancode/yamllint-github-action@v2.1.1
         with:
           yamllint_strict: true
       - name: "Lint: shell script"
