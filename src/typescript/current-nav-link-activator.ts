@@ -6,7 +6,7 @@ export default class CurrentNavLinkActivator {
 
   run() {
     const currentPageNavLink = document.getElementById(
-      `${this.#currentPageId}-nav-link`
+      `${this.#currentPageId}-nav-link`,
     );
 
     if (currentPageNavLink === null) return;
