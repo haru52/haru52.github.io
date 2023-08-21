@@ -49,7 +49,7 @@
     "@commitlint/config-conventional": "^17.6.7",
     "@commitlint/cz-commitlint": "^17.6.7",
     "@markuplint/pug-parser": "^3.9.0",
-    "@secretlint/secretlint-rule-preset-recommend": "^7.0.6",
+    "@secretlint/secretlint-rule-preset-recommend": "^7.0.7",
     "@types/bootstrap": "^5.2.6",
     "@types/globule": "^1.1.6",
     "@types/node": ">=18.0.0 <18.17.0",
