@@ -75,7 +75,7 @@
     "pug-loader": "^2.4.0",
     "sass": "^1.65.1",
     "sass-loader": "^13.3.2",
-    "secretlint": "^7.0.3",
+    "secretlint": "^7.0.7",
     "stylelint": "^15.10.2",
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-standard-scss": "^10.0.0",
