@@ -1,6 +1,6 @@
 extends layouts/_layout
 block append variables
-  - description = "haruのマジック（手品）に関するページ。";
+  - description = 'haruのマジック（手品）に関するページ。';
   - const pageKeywords = 'マジック,手品,奇術,メンタリズム,haru,magic,mentalism,trick,conjuring,illusion';
   - const pageTitle = 'マジック';
   - const filePath = 'magic.html';
@@ -16,3 +16,6 @@ block content
       a(href='https://haru52.com/magic_lecture_license/' target='_blank' rel='noreferrer')
         | Magic Lecture License
       | ：マジック（手品）本などの購入者に対して権利と義務を規定するライセンスです
+  h2 haru magic - YouTube 再生リスト
+  .embeded-youtube
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=FbZO4Por0CgFJYjI&amp;list=PLZIpPNSyMMCoUjEk92Wdd2T8kMx1k_Mr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

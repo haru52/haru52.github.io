@@ -1,3 +1,16 @@
 nav[aria-label="breadcrumb"] {
   margin-top: 20px;
 }
+
+// Embeded YouTube videos
+@media (width < 600px) {
+  .embeded-youtube {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+
+    > iframe {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
