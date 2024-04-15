@@ -46,7 +46,7 @@
   "homepage": "https://github.com/haru52/haru52.github.io#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
-    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@commitlint/cz-commitlint": "^17.7.1",
     "@markuplint/pug-parser": "^3.10.0",
     "@secretlint/secretlint-rule-preset-recommend": "^7.0.7",
