@@ -4,8 +4,8 @@
   "description": "haru website.",
   "private": true,
   "engines": {
-    "node": "^18.16.1",
-    "npm": "^9.8.0"
+    "node": "^20.13.1",
+    "npm": "^10.8.0"
   },
   "scripts": {
     "clean": "rm -rf docs; git restore docs/CNAME",
