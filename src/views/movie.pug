@@ -1,13 +1,14 @@
 extends layouts/_layout
 block append variables
   - description = "haru's movie page.";
-  - const pageKeywords = 'movie,film,movie review,cinema review,review,best films,best movies';
+  - const pageKeywords = 'haru,haru52,movie,film,movie review,cinema review,review,best films,best movies';
   - const pageTitle = 'Movie';
   - const filePath = 'movie.html';
 block content
   h2 Movie Reviews
   ul
-    li: a(href='https://filmarks.com/users/fukky28' target='_blank' rel='noreferrer') Filmarks
+    li: a(href='https://filmarks.com/users/fukky28' target='_blank' rel='noreferrer')
+      | Filmarks (@fukky28)
     li
       a(
         href='https://blufflog.hatenablog.com/archive/category/Movie'
