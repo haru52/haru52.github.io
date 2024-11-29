@@ -36,7 +36,7 @@ jobs:
         # Because a line length of a commit message created by Dependabot often
         # exceeds 100 characters.
         if: github.actor != 'dependabot[bot]'
-        uses: wagoid/commitlint-github-action@v5
+        uses: wagoid/commitlint-github-action@v6
         with:
           configFile: .commitlintrc.yml
       - name: "Lint: YAML"
