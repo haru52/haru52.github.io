@@ -1,10 +1,22 @@
 extends layouts/_layout
 block append variables
-  - description = "haru's all time best favorite 10 films.";
-  - const pageKeywords = 'film,movie,best films,best movies';
-  - const pageTitle = 'My Best 10 Films';
-  - const filePath = 'my_best_10_films.html';
+  - description = "haru's movie page.";
+  - const pageKeywords = 'movie,film,movie review,cinema review,review,best films,best movies';
+  - const pageTitle = 'Movie';
+  - const filePath = 'movie.html';
 block content
+  h2 Movie Reviews
+  ul
+    li: a(href='https://filmarks.com/users/fukky28' target='_blank' rel='noreferrer') Filmarks
+    li
+      a(
+        href='https://blufflog.hatenablog.com/archive/category/Movie'
+        target='_blank'
+        rel='noreferrer'
+      )
+        i.fa-solid.fa-blog.fa-fw
+        |  Blog
+  h2 My Best 10 Films
   ol
     li
       strong Suspiria
