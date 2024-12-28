@@ -7,7 +7,7 @@
 *.yaml
 
 # 3rd party code
-/.github/vale_styles/
+/.github/styles/
 
 # Others
 /docs/
