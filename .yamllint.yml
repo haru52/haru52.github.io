@@ -1,5 +1,7 @@
 ---
 extends: default
 ignore: |
+  .claude/
+  .serena/
   node_modules/
   /.github/styles/

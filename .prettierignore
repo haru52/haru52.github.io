@@ -6,6 +6,12 @@
 *.yml
 *.yaml
 
+# Claude Code
+.claude/
+
+# Serena MCP
+.serena/
+
 # 3rd party code
 /.github/styles/
 
